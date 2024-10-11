@@ -1,0 +1,18 @@
+def affiche():
+  """
+  Affiche les nombres de 1 à 100, en remplaçant les multiples de 3 par "Fizz",
+  les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee".
+  """
+
+  for i in range(1, 101):
+    if i % 15 == 0:
+      print("Frisbee", end="")
+    elif i % 3 == 0:
+      print("Fizz", end="")
+    elif i % 5 == 0:
+      print("Buzz", end="")
+    else:
+      print(i, end="")
+
+# Appel de la fonction pour exécuter le programme
+affiche()
