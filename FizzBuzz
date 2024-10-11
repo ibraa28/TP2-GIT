@@ -1,4 +1,4 @@
-def affiche():
+def affiches():
   """
   Affiche les nombres de 1 à 100, en remplaçant les multiples de 3 par "Fizz",
   les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee".
@@ -15,4 +15,4 @@ def affiche():
       print(i, end="")
 
 # Appel de la fonction pour exécuter le programme
-affiche()
+affiches()
