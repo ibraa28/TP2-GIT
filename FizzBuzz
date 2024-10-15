@@ -1,10 +1,14 @@
-def affiches():
+def affiche(n1, n2):
   """
-  Affiche les nombres de 1 à 100, en remplaçant les multiples de 3 par "Fizz",
-  les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee".
+  Affiche les nombres de n1 à n2 (inclus), en remplaçant les multiples de 3 par "Fizz",
+  les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee"
+
+  Args:
+    n1: Premier nombre de la séquence.
+    n2: Dernier nombre de la séquence.
   """
 
-  for i in range(1, 101):
+  for i in range(n1, n2 + 1):
     if i % 15 == 0:
       print("Frisbee", end="")
     elif i % 3 == 0:
@@ -14,5 +18,4 @@ def affiches():
     else:
       print(i, end="")
 
-# Appel de la fonction pour exécuter le programme
-affiches()
+
