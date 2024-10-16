@@ -1,0 +1,23 @@
+import string
+
+def crypt(message):
+    caracteres = string.ascii_letters + string.ascii_punctuation + string.digits + " "
+    result = ""
+    for char in message:
+        index = caracteres.find(char)
+        if index == -1:  # Si le caractère n'est pas dans la table
+            result += char
+        else:
+            result += caracteres[(index + 1) % len(caracteres)]
+    return result
+
+# Test
+def test_crypt():
+    assert crypt("Hello, world!") == "Ifmmp, xpsme!"
+    assert crypt("aZ") == "bA"
+    assert crypt(" !") == " \""
+    assert crypt("123") == "234"
+
+if __name__ == "__main__":
+    test_crypt()
+    print(crypt("Votre message à crypter"))
