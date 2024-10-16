@@ -1,21 +1,23 @@
 def affiche(n1, n2):
-  """
-  Affiche les nombres de n1 à n2 (inclus), en remplaçant les multiples de 3 par "Fizz",
-  les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee"
+    """
+    Affiche les nombres de n1 à n2 (inclus), en remplaçant les multiples de 3 par "Fizz",
+    les multiples de 5 par "Buzz" et les multiples de 15 par "Frisbee".
 
-  Args:
-    n1: Premier nombre de la séquence.
-    n2: Dernier nombre de la séquence.
-  """
+    Args:
+        n1: Premier nombre de la séquence.
+        n2: Dernier nombre de la séquence.
+    """
 
-  for i in range(n1, n2 + 1):
-    if i % 15 == 0:
-      print("Frisbee", end="")
-    elif i % 3 == 0:
-      print("Fizz", end="")
-    elif i % 5 == 0:
-      print("Buzz", end="")
-    else:
-      print(i, end="")
+    for i in range(n1, n2 + 1):
+        if i % 15 == 0:
+            print("Frisbee", end="")
+        elif i % 3 == 0:
+            print("Fizz", end="")
+        elif i % 5 == 0:
+            print("Buzz", end="")
+        else:
+            print(i, end="")
 
-affiche(2, 45)
+# Exemples
+affiche(5, 10)  #BuzzFizz78FizzBuzz
+affiche(10, 16)  #Buzz11Fizz1314Frisbee16
